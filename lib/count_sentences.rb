@@ -14,9 +14,6 @@ class String
   end
 
   def count_sentences
-    count = self.split(/\.|\?|!/)
-    count.delete_if{|s| s.length == 0 }
-    count.length
-    #binding.pry
+    count = self.split(/\.|\?|!/)delete_if{|s| s.length == 0 }.length
   end
 end
